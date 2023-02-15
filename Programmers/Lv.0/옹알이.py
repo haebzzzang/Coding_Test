@@ -12,7 +12,7 @@ def solution(babbling) :
 
     # range(len(word))로 실행하면 안 됨
     # python은 index가 0부터 시작하기 때문에, permutations(word, 0)이 되어버리면 0개의 원소를 골라 순열을 생성하는 것이기 때문
-    # len(word)로 마지막 index를 설정하면, 모든 조합이 나오지 않음
+    # len(word)로 마지막 index를 설정하면 안 됨
     # index를 1부터 시작하지 않으면 런타임 에러 뜸
     for i in range(1, len(word)+1) :
         for j in permutations(word, i) :
